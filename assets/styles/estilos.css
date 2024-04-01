@@ -1,0 +1,72 @@
+.fondo{
+background-color: #0033a0;
+
+}
+
+.menu{
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+background-size:100%;
+padding: 19%;
+background-repeat: no-repeat;
+
+}
+
+
+.iconos{
+  font-size: 20px;
+  color: white;
+}
+
+.botones{
+  background-color: white;
+  color: #0033a0;
+  font-weight: bolder;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botones:hover{
+  background-color: #F88E1E;
+  color: white;
+}
+
+.policy{
+  background-image: url("../img/Policy.jpg");
+  background-position:center;
+background-size: 100%;
+padding: 10%;
+background-repeat: no-repeat;
+}
+
+.general{
+  background-image: url("../img/general.jpg");
+  background-position:center;
+background-size: 100%;
+padding: 10%;
+background-repeat: no-repeat;
+}
+
+.facturacion{
+  background-image: url("../img/facturacion.jpg");
+  background-position:center;
+background-size: 100%;
+padding: 10%;
+background-repeat: no-repeat;
+}
+
+.sia{
+  background-image: url("../img/SIA.jpg");
+  background-position:center;
+background-size: 100%;
+padding: 8%;
+background-repeat: no-repeat;
+}
+
+.venta{
+  background-image: url("../img/Venta.jpg");
+  background-position:center;
+background-size: 100%;
+padding: 8%;
+background-repeat: no-repeat;
+}
