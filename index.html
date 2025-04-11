@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automatización</title>
+    <title>Tableros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/estilos.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -11,9 +11,9 @@
 
 </head>
 
-<body class="fondo">
+<body>
     
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fondo">
     <div class="container-fluid">
       <a class=" navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="100"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,206 +22,59 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-        <a class="nav-link active text-white border-end" aria-current="page" href="#">AUTOMATIZACIÓN DE PROCESOS</a>
+        <h4 class="body text-white">Tableros BancaSeguros y Afinidades</h4>
           </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">CONTACTO</a>
-          </li>
-      </ul>
+       </ul>
       </div>
     </div>
   </nav>
 
 
 <main>
+ 
+      <section>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/InformePrimas.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="Primas">
+              <div class="card-body">
+                <h5 class="card-title">Informe de Primas</h5>                          
+                <a href="https://app.powerbi.com/reportEmbed?reportId=1ba47dea-006e-4393-a662-47da4e28b437&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Gerencia</button></a> 
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/Industrial.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="ResultadoIndustrial">
+              <div class="card-body">
+                <h5 class="card-title">Resultado Industrial</h5>
+                
+                <a href="https://app.powerbi.com/reportEmbed?reportId=1ee0511d-8e4f-44f0-bc7d-8aad448d1b42&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Sura</button></a>
+                <br>
+                <p title="Selecciona Hyperion o Sinco" class="industrial">Tablero Gerencia</p>
 
-  <section class="container-fluid">
-    <div class="row menu">
-    <div class="col-12">
-      <h2 class="text-white mb-5">¿Cuál automatización necesitas consultar?</h2>
-    <a href="#generalgo"><button class="btn botones me-2">GENERAL</button></a> 
-    <a href="#ventago"><button class="btn botones me-2">VENTA CRUZADA</button></a>
-    <a href="#siago"><button class="btn botones me-2">SIA</button></a>
-    <a href="#facturago"><button class="btn botones me-2">FACTURACIÓN</button></a>
-    <a href="#policygo"><button class="btn botones me-2">POLICY</button></a>
-    <a href="#policynogo"><button class="btn botones me-2">NO-PÓLIZA</button></a>
-    </div>
-    </div>
-      </section>
+                <a href="https://app.powerbi.com/reportEmbed?reportId=88b530ad-10d4-40e1-b23c-77a7b5ecc14f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Informe Hyperion</button></a>
+                
+                <a href="https://app.powerbi.com/reportEmbed?reportId=e0358fab-e791-41a6-9764-4f1f88c83661&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Informe Sinco</button></a>
 
-      <section class="container-fluid  general">
-        <div class="row justify-content-center text-center ">
-      
-          <h1 class="text-white text-center" id="generalgo">GENERAL</h1>
+
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="./assets/img/Administra.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="administrativos">
+              <div class="card-body">
+                <h5 class="card-title">Gastos administrativos</h5>
+                
+                <a href="https://app.powerbi.com/reportEmbed?reportId=a5913e46-130c-42b5-a9b7-73ace9d0167f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Sura</button></a>
+                <br>
+                <a title="Sólo Afinidades" href="https://app.powerbi.com/reportEmbed?reportId=daff5727-9ea5-45c7-aea0-b77c3ee83df8&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Gerencia</button></a>
+                
+                
+              </div>
+            </div>
+          </div>
+         
+
         
-          <div class="col-6 border-end">
-            <h3 class="text-white text-center">Acerca de</h3>
-            <br>
-            <p class="text-white">En esta sección general de los bots implementados en la gerencia, se encontrarán los impactos consolidados en tiempo y en dinero de los mismos, además, se podrá observar el estado de cada uno de los entrenamientos solicitados para una futura ejecución.</p>
-           
-            
-          </div>
-          <div class="col-6">
-            <h2 class="text-white text-center">Impactos</h2>
-            <br>
-            
-            <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B4e7b74c1-6aea-4380-a596-2b7db1bd27df%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711069621722&web=1" target="_blank" > <button class="btn botones mt-2" >VER MAS</button> </a>
-          </div>
-        </div>
-      </section>
-      
-    
-<section class="container-fluid policy">
-  <div class="row justify-content-center text-center">
-    <h1 class="text-white text-center" id="policygo">POLICY (FACTURACIÓN SATELITAL)</h1>
-  
-    <div class="col-6 border-end mt-5">
-      <h2 class="text-white text-center">Acerca de</h2>
-      <br>
-      <p class="text-white">La necesidad expuesta para esta automatización es realizar la consulta de un listado de placas específico, en donde puede ser posible el encontrar algunas que esten siendo facturadas, aún cuando ya la póliza asociada a tal placa se encuentre CANCELADA, EXPIRADA o NO VIGENTE.</p>
-
-     
-      
-    </div>
-    <div class="col-6 mt-5">
-      <h2 class="text-white text-center">Impactos</h2>
-      <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B1d4c19c7-5595-4cc5-a820-a5e223eb5f8f%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711067245625&web=1" target="_blank" > <button class="btn botones mt-4" >VER MAS</button> </a>
-      
-     
-      <h3 class="text-white text-center mt-4">Periodicidad</h3>
-      <p class="text-white">Este bot se ejecuta los primeros 5 días hábiles de cada mes</p>
-
-    </div>
-  </div>
-  
-</section>
-
-<section class="container-fluid policy">
-  <div class="row justify-content-center text-center">
-    <h1 class="text-white text-center" id="policynogo">POLICY (NO PÓLIZA)</h1>
-  
-    <div class="col-6 border-end mt-5">
-      <h2 class="text-white text-center">Acerca de</h2>
-      <br>
-      <p class="text-white">La necesidad a hoy latente de conocer de las diferentes inspecciones realizadas en el día a día, cuáles terminan en póliza y cuáles no, fue la que promovió el entrenamiento de este robot, consultando en PolicyCenter qué placas No terminaron en póliza y poder realizar los análisis pertinentes por oficina del por qué.</p>
-
-      <h3 class="text-white text-center">Periodicidad</h3>
-      <p class="text-white">Este bot se ejecuta los primeros 5 días hábiles de cada mes</p>
-      
-    </div>
-    <div class="col-6 mt-5">
-      <h2 class="text-white text-center">Impactos</h2>
-            
-      <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bd9781b8f-f08b-4411-a2d7-3706392ea723%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711838753044&web=1" target="_blank" > <button class="btn botones mt-2" >VER MAS</button> </a>
-      
-      
-
-      <h2 class="text-white text-center mt-2">Informes por mes</h2>
-            
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B739f0198-da07-467e-ae9c-2bc198d4b1e5%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711839919251&web=1" target="_blank"><button  class="btn botones me-2">Enero-Febrero</button></a> 
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B754d48dc-e126-4303-b1ba-e4f806144295%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711839938190&web=1" target="_blank"><button  class="btn botones me-2">Marzo</button></a>
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B45f11b3f-7f7c-46d0-ad9e-a9d0097ef6d6%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711839955048&web=1" target="_blank"><button  class="btn botones me-2">Abril</button></a>
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bd13cce67-e8eb-49fb-8da5-004470b71c5a%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711839946746&web=1" target="_blank"><button  class="btn botones me-2">Mayo</button></a>
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bf6d7819f-279f-4e51-962a-50fe1e106551%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711839934102&web=1" target="_blank"><button  class="btn botones me-2">Junio</button></a>
-    <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B27a65faf-2c1f-4b0a-b254-c9a234a70c5f%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711840035837&web=1" target="_blank"><button  class="btn botones me-2">Julio</button></a>
-
-
-
-      
-      
-    </div>
-  </div>
-  
-</section>
-
-<section class="container-fluid policy facturacion">
-  <div class="row justify-content-center text-center">
-    <h1 class="text-white text-center" id="facturago">FACTURACIÓN</h1>
-  
-    <div class="col-6 border-end mt-5">
-      <h2 class="text-white text-center">Acerca de</h2>
-      <br>
-      <p class="text-white">Se realiza esta automatización dado el dolor de manualidades y operatividad excesiva al momento de facturar en el aplicativo SAP, este bot aplica de manera transversal para cualquier equipo que requiera tanto Excel como SAP para realizar este proceso.</p>
-      
-    </div>
-    <div class="col-6 mt-5">
-      <h2 class="text-white text-center">Impactos</h2>
-            
-      <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B0babe521-21a7-41da-bb38-adbad3618376%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711069616002&web=1" target="_blank" > <button class="btn botones mt-4" >VER MAS</button> </a>
-
-      <h3 class="text-white text-center mt-4">Periodicidad</h3>
-      <p class="text-white">Este bot se ejecuta de manera Mensual</p>
-
-    </div>
-  </div>
-</section>  
-
-<section class="container-fluid sia">
-  <div class="row justify-content-center text-center">
-    <h1 class="text-white text-center" id="siago">SIA (Cierre de Servicios)</h1>
-  
-    <div class="col-6 border-end mt-5">
-      <h2 class="text-white text-center">Acerca de</h2>
-      <br>
-      <p class="text-white">Esta automatización permite realizar los cierres de actividades y servicios que se solicitan en el día a día de la operación y que, antes de este bot, sólo podía realizarse uno a uno de manera manual.</p>
-      
-    </div>
-    <div class="col-6 mt-5">
-      <h2 class="text-white text-center">Impactos</h2>
-      
-      <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bc0b0b368-a961-40bf-b0b0-8874449b065d%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711069626366&web=1" target="_blank" > <button class="btn botones mt-4" >VER MAS</button> </a>
-
-      <h3 class="text-white text-center mt-4">Periodicidad</h3>
-      <p class="text-white">Este bot se ejecuta a demanda</p>
-
-    </div>
-  </div>
-</section>  
-
-<section class="container-fluid venta">
-  <div class="row justify-content-center text-center">
-    <h1 class="text-white text-center" id="ventago">Venta Cruzada</h1>
-  
-    <div class="col-6 border-end mt-5">
-      <h2 class="text-white text-center">Acerca de</h2>
-      <br>
-      <p class="text-white">Con el fin de obtener una trazabilidad mayor a lo que es la venta cruzada de servicios en el centro de operaciones, se solicita realizar este proceso automatizado a través de un forms, en donde se va a llevar la información en tiempo real y de manera automática de qué servicios se están vendiendo y quién realiza tal venta.</p>
-      
-    </div>
-    <div class="col-6 mt-5">
-      <h2 class="text-white text-center">Impactos</h2>
-     
-      <a href="https://suramericana.sharepoint.com/:x:/r/sites/ROBOTS_SPC/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7B0e00a4a9-0970-4f13-9f51-dc1a5b885ed6%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1711069633163&web=1" target="_blank" > <button class="btn botones mt-4" >VER MAS</button> </a>
-
-      <h3 class="text-white text-center mt-4">Periodicidad</h3>
-      <p class="text-white">Este proceso se realiza diariamente</p>
-
-    </div>
-  </div>
-</section>  
-
-
-</main>
-
-<footer>
-<section class="container-fluid mt-2  text-white">
-    <h2 class="justify-content-center text-center" id="contact">CONTACTO</h2>
-  <div class="row mt-2">
-    <div class="col-6 text-end border-end mt-3">
-      <p>Santiago Posada Cadavid</p>
-      <p>sposadac@sura.com.co</p>
-      <p>3196040550</p>
-      </div>
-     <div class="col-6 my-auto">
-          <a href="https://teams.microsoft.com/v2/" target="_blank"><i class="bi bi-microsoft-teams iconos"></i></a>
-          <p></p>
-          <a href="mailto:sposadac@sura.com.co"><i class="bi bi-envelope-at iconos"></i></a>
-          <p></p>
-          <a href="https://wa.me/573196040550" target="_blank"><i class="bi bi-whatsapp iconos"></i></a>
-          </div>
-  </section>
-</footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>

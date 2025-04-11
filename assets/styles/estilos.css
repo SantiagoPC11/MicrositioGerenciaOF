@@ -1,5 +1,11 @@
+body{
+  font-family:"Sura Sans";
+  background-color: white;
+}
+
+
 .fondo{
-background-color: #0033a0;
+background-color: #2d6df6;
 
 }
 
@@ -7,10 +13,11 @@ background-color: #0033a0;
   background-image: url("../img/banner.jpg");
   background-position: center;
 background-size:100%;
-padding: 19%;
+padding: 5%;
 background-repeat: no-repeat;
 
 }
+
 
 
 .iconos{
@@ -20,14 +27,14 @@ background-repeat: no-repeat;
 
 .botones{
   background-color: white;
-  color: #0033a0;
+  color: #888b8d;
   font-weight: bolder;
   text-decoration: none;
   display: inline-block;
 }
 
 .botones:hover{
-  background-color: #F88E1E;
+  background-color: #00aec7;
   color: white;
 }
 
@@ -69,4 +76,30 @@ background-repeat: no-repeat;
 background-size: 100%;
 padding: 8%;
 background-repeat: no-repeat;
+}
+
+.card-title{
+  color: #0033a0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card{
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  padding-left: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.card-img-top{
+margin: 20px;
+}
+
+.industrial{
+  color: #888b8d;
+font-weight: bold;
+  text-align: center;
+  ;
 }
