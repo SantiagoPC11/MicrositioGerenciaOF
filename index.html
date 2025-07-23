@@ -1,80 +1,258 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/estilos.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            margin: 0;
+            font-family: SURA Sans, sans-serif;
+			background: #F9FAE1
+        }
 
+        nav {
+            background-color: #F9FAE1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 25px 0;
+        }
+
+        .menu-item {
+            position: relative;
+            text-align: center;
+            margin: 0 15px;
+        }
+
+        .menu-button {
+            color: white;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 12px;
+            font-size: 30px;
+            cursor: pointer;
+            width: 190px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu-button .icon-img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .menu-item:nth-child(1) .menu-button {
+            background-color: #2D6DF6;
+        }
+
+        .menu-item:nth-child(2) .menu-button {
+            background-color: #E3E829;
+			color: #0033A0;
+        }
+
+        .menu-item:nth-child(3) .menu-button {
+            background-color: #0033A0;
+            color: white;
+        }
+
+        .menu-item:nth-child(4) .menu-button {
+            background-color: #00AEC7;
+        }
+
+        .menu-button:hover {
+            opacity: 0.9;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 170px;
+            box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown a {
+            color: #0033A0;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+
+        .submenu {
+            position: relative;
+        }
+
+        .submenu .submenu-dropdown {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-width: 170px;
+            background-color: white;
+            box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .submenu:hover .submenu-dropdown {
+            display: block;
+        }
+
+        .banner {
+            margin: 0;
+            padding-top: 10px;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-button {
+                width: 100%;
+            }
+
+            .menu-item:hover .dropdown {
+                display: none;
+            }
+
+            .menu-item.active .dropdown {
+                display: block;
+                position: static;
+                box-shadow: none;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    
-  <nav class="navbar navbar-expand-lg fondo">
+
+<nav class="navbar navbar-expand-lg" style="background-color: #2D6DF6">
     <div class="container-fluid">
-      <a class=" navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="100"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-        <h4 class="body text-white">Tableros BancaSeguros y Afinidades</h4>
-          </li>
-       </ul>
-      </div>
+        <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="logo" width="100"></a>
     </div>
-  </nav>
+</nav>
 
+<div class="banner">
+    <img src="banner micrositio gerencia.svg" alt="Banner principal">
+</div>
 
-<main>
- 
-      <section>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
-          <div class="col">
-            <div class="card">
-              <img src="./assets/img/InformePrimas.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="Primas">
-              <div class="card-body">
-                <h5 class="card-title">Informe de Primas</h5>                          
-                <a href="https://app.powerbi.com/reportEmbed?reportId=1ba47dea-006e-4393-a662-47da4e28b437&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Gerencia</button></a> 
-              </div>
+<nav>
+    <div class="menu-item">
+        <button class="menu-button">
+            <img src="icono cifras.svg" alt="Icono Cifras" class="icon-img">
+            Cifras
+        </button>
+        <div class="dropdown">
+            <a href="https://app.powerbi.com/reportEmbed?reportId=1ba47dea-006e-4393-a662-47da4e28b437&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Primas</a>
+            <div class="submenu">
+                <a href="#">RI ▸</a>
+                <div class="submenu-dropdown">
+                    
+                    
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=88b530ad-10d4-40e1-b23c-77a7b5ecc14f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Informe Hyperion</a>
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=e0358fab-e791-41a6-9764-4f1f88c83661&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Informe Sinco</a>
+					<a href="https://app.powerbi.com/reportEmbed?reportId=1ee0511d-8e4f-44f0-bc7d-8aad448d1b42&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Tablero SURA</a>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./assets/img/Industrial.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="ResultadoIndustrial">
-              <div class="card-body">
-                <h5 class="card-title">Resultado Industrial</h5>
-                
-                <a href="https://app.powerbi.com/reportEmbed?reportId=1ee0511d-8e4f-44f0-bc7d-8aad448d1b42&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Sura</button></a>
-                <br>
-                <p title="Selecciona Hyperion o Sinco" class="industrial">Tablero Gerencia</p>
-
-                <a href="https://app.powerbi.com/reportEmbed?reportId=88b530ad-10d4-40e1-b23c-77a7b5ecc14f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Informe Hyperion</button></a>
-                
-                <a href="https://app.powerbi.com/reportEmbed?reportId=e0358fab-e791-41a6-9764-4f1f88c83661&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Informe Sinco</button></a>
-
-
-              </div>
+            <div class="submenu">
+                <a href="#">Gastos ▸</a>
+                <div class="submenu-dropdown">
+                    <a href="https://app.powerbi.com/reportEmbed?reportId=daff5727-9ea5-45c7-aea0-b77c3ee83df8&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Tablero Gerencia Afinidades</a>
+					<a href="https://app.powerbi.com/reportEmbed?reportId=a5913e46-130c-42b5-a9b7-73ace9d0167f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Tablero SURA</a>
+                    
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./assets/img/Administra.jpg" class="card-img-top w-25 mx-auto d-block img-fluid" alt="administrativos">
-              <div class="card-body">
-                <h5 class="card-title">Gastos administrativos</h5>
-                
-                <a href="https://app.powerbi.com/reportEmbed?reportId=a5913e46-130c-42b5-a9b7-73ace9d0167f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Sura</button></a>
-                <br>
-                <a title="Sólo Afinidades" href="https://app.powerbi.com/reportEmbed?reportId=daff5727-9ea5-45c7-aea0-b77c3ee83df8&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581"><button class="btn botones mb-2">Tablero Gerencia</button></a>
-                
-                
-              </div>
-            </div>
-          </div>
-         
+        </div>
+    </div>
 
-        
+    <div class="menu-item">
+        <button class="menu-button">
+            <img src="icono aspiracional.svg" alt="Icono Aspiracionales" class="icon-img">
+            Aspiracional
+        </button>
+        <div class="dropdown">
+           
+            <a href="https://apps.powerapps.com/play/e/default-3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581/a/4a62db39-8283-4ff9-b483-33dd527b7aec?tenantId=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581&source=sharebutton&sourcetime=1752098020655">Nuevos Negocios</a>
+            <a href="https://app.powerbi.com/reportEmbed?reportId=103d947d-f677-4862-9f1e-0fff2f0f933f&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Profundización Afinidades</a>
+			 <a href="https://app.powerbi.com/reportEmbed?reportId=5ebe5be8-da4e-4de0-96b3-8eb1b889df6b&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Digital</a>
+            <a href="https://app.powerbi.com/reportEmbed?reportId=e89c860c-c247-4c38-8d0d-0f9984afe8d8&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Índice de frescura</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <button class="menu-button">
+            <img src="icono transversal.svg" alt="Icono Transversales" class="icon-img">
+            Transversal
+        </button>
+        <div class="dropdown">
+            <a href="https://app.powerbi.com/reportEmbed?reportId=64521d24-7e27-4d2c-8bd3-28a9172aecaa&autoAuth=true&ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Mercadeo 360°</a>
+            <a href="https://app.powerbi.com/links/nTIN2HAu3J?ctid=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581&pbi_source=linkShare">Quejas</a>
+            <a href="#">Remuneración variable</a>
+			 <a href="#">Mejoras evolutivas</a>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <button class="menu-button">
+            <img src="icono otros.svg" alt="Icono Otros" class="icon-img">
+            Otros
+        </button>
+        <div class="dropdown">
+            <a href="https://teams.microsoft.com/l/team/19%3AcectpNsGtVqDR7a_oeegHbZduUd7nqG-daecGGR9gtM1%40thread.tacv2/conversations?groupId=b07a4519-0581-4bf2-a98e-2957d3e7619d&tenantId=3c0bd4fe-1111-4d13-8e0c-7c33b9eb7581">Contratos Afinidades</a>
+            <a href="#">Pricing Productos Afinidades</a>
+            <a href="https://www.sura.co/legal/sac/clausulados">Clausulados</a>
+        </div>
+    </div>
+</nav>
+
+<div class="banner">
+    <img src="banner micrositio gerencia2.svg" alt="Banner principal">
+</div>
+
+<script>
+    document.querySelectorAll('.menu-button').forEach(button => {
+        button.addEventListener('click', function(e) {
+            const parent = this.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
